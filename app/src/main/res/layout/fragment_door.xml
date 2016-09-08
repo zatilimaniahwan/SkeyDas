@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context="com.example.nasiru_kun.skeydas.Door">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/btStatus"
+            android:text="Bluetooth is Off :"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/tv_status"
+            android:text="Enable"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="#A9A9A9"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/door"
+            android:text="Door :"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:text="PAIRING DEVICES"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/door"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="20dp"
+            android:background="#A9A9A9"
+            android:gravity="center"
+            android:layout_width="225dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/passworddoor"
+            android:inputType="textPassword"
+            android:hint="enter your password door"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:ems="40"
+            android:layout_below="@+id/btn_scan"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColorHint="#000000"/>
+
+        <CheckBox
+            android:id="@+id/cbshowpass"
+            android:text="Show Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passworddoor"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageButton
+            android:id="@+id/imgsend"
+            android:src="@drawable/ic_content_send"
+            android:background="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/passworddoor"
+            android:layout_marginTop="230dp"/>
+
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:text="Forgot Password?"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/cbshowpass"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</FrameLayout>

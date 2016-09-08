@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_id"
+            android:title="Home"
+            android:icon="@drawable/ic_action_home"
+            ></item>
+
+        <item
+            android:id="@+id/door_id"
+            android:title="Door"
+            android:icon="@drawable/ic_action_lock_open"
+            ></item>
+
+        <item
+            android:id="@+id/settings_id"
+            android:title="Settings"
+            android:icon="@drawable/ic_action_settings"
+            ></item>
+
+        <item
+            android:id="@+id/about_id"
+            android:title="About"
+            android:icon="@drawable/ic_action_info_outline"
+            ></item>
+
+        <item
+            android:id="@+id/help_id"
+            android:title="Help"
+            android:icon="@drawable/ic_action_help"
+            ></item>
+
+    </group>
+
+</menu>
