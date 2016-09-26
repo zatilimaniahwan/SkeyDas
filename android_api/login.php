@@ -20,7 +20,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         // use is found
         $response["error"] = FALSE;
         $response["uid"] = $device["unique_id"];
-        $response["device"]["name"] = $device["name"];
+        $response["device"]["device_name"] = $device["device_name"];
         $response["device"]["email"] = $device["email"];
         $response["device"]["created_at"] = $device["created_at"];
         $response["device"]["updated_at"] = $device["updated_at"];
